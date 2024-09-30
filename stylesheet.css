@@ -1,0 +1,18 @@
+body {
+  background-color: pink;
+}
+p {
+  font-size: 200%;
+}
+img {
+  max-width: 30%;
+}
+.myBlock {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: Impact, sans-serif;
+  gap: 20px;
+}
