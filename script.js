@@ -13,3 +13,22 @@ function changeColor() {
     button.innerText = "Clicked!"; // Change button text
   });
 }
+
+function sum() {
+  let up = document.getElementById("inc");
+  let down = document.getElementById("dec");
+
+  let numText = document.getElementById("num");
+
+  let score = numText.innerHTML;
+
+  up.addEventListener("click", function () {
+    score++;
+    numText.innerHTML = score;
+  });
+
+  down.addEventListener("click", function () {
+    score--;
+    numText.innerHTML = score;
+  });
+}
