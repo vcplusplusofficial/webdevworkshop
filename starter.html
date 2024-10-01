@@ -10,12 +10,14 @@
  </head>
  <!-- HTML requires closing tags -->
  <body> 
-
     <!-- This is a body tag. A body is used to contain the main content in your page. It is used for 90% of the website -->
-   <p> Welcome to the workshop! </p> 
 
    <h1>Welcome to the workshop!</h1>
+   <!-- This is a heading tag. It formats the text -->
+
+   <p> This is a paragraph. </p> 
  <!-- This is a paragraph tag used to structure text and make it more organized. There are a lot of tags that you can work with -->
+
    <div class="myBlock"> 
          
          <div class="vertBlock">
@@ -23,8 +25,8 @@
 
             <p id="num">0</p>
             <div>
-               <button class="inc" id="inc" onclick=sum()>Up</button>
-               <button class="dec" id="dec" onclick=sum()>Down</button>
+               <button class="inc" id="inc">Up</button>
+               <button class="dec" id="dec">Down</button>
             </div>
          </div>
          <img src="101 GB Flyer.png" alt="workshop flyer"> 
@@ -36,7 +38,15 @@
          <!-- One other tag is the button tag. I've linked it to a basic function in the script.js file-->
          <!-- you could try making it less ugly with CSS! -->
 
-         <button class="toClick" id="changeColor" onclick="changeColor()">Click Me</button>
+         <button class="toClick" id="changeColor" onclick=changeColor()>Click Me</button>
+         <!-- This button changes when you hover over and when you click it. Take a look at the script.js and the stylesheet.css file-->   
+         <!-- you could try adding more functionality with another event listener!-->
+
+      </div>
+      <div class="garlic_hamster_stuff">
+         <!-- There are lots of ways to make your website responsive including taking in user input-->
+         <img onmouseover=garlicHamster() src="garlichamster.jpg" alt="hamster that kinda looks like garlic" id="hamster">
+         <p id="responsetext"> Try mousing over the hamster... </p> 
       </div>
 
  </body>
