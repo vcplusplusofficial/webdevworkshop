@@ -16,3 +16,32 @@ img {
   font-family: Impact, sans-serif;
   gap: 20px;
 }
+
+.button-block {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.toClick{
+  cursor: pointer;
+  background-color: #FFF; /* Green background */
+  border: none;              /* Remove borders */
+  color: black;              /* White text */
+  padding: 15px 32px;        /* Padding */
+  text-align: center;        /* Centered text */
+  text-decoration: none;     /* Remove underline */
+  display: inline-block;     /* Inline block element */
+  font: poppins;             /* Font */
+  font-size: 16px;           /* Text size */
+  margin: 10px 2px;          /* Margins */
+  cursor: pointer;           /* Pointer cursor on hover */
+  border-radius: 12px;       /* Rounded corners */
+}
+
+#changeColor:hover {
+  background-color: #45a049; /* Darker green */
+}
+
