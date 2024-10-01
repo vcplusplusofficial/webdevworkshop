@@ -17,12 +17,34 @@ img {
   gap: 20px;
 }
 
+.vertBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .button-block {
 
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 20px;
+}
+
+.inc, .dec {
+  background-color: #000;
+  border: none;              /* Remove borders */
+  color: white;              /* White text */
+  padding: 15px 32px;        /* Padding */
+  text-align: center;        /* Centered text */
+  text-decoration: none;     /* Remove underline */
+  display: inline-block;     /* Inline block element */
+  font: poppins;             /* Font */
+  font-size: 16px;           /* Text size */
+  margin: 10px 2px;          /* Margins */
+  cursor: pointer;           /* Pointer cursor on hover */
+  border-radius: 12px;       /* Rounded corners */
 }
 
 .toClick{

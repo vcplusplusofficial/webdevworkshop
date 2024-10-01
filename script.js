@@ -13,6 +13,29 @@ function changeColor() {
     button.innerText = "Clicked!"; // Change button text
   });
 }
+
+function sum() {
+  let up = document.getElementById("inc");
+  let down = document.getElementById("dec");
+
+  let numText = document.getElementById("num");
+
+  let score = parseInt(numText.innerHTML); // Convert string to number
+
+  up.addEventListener("click", function () {
+    score++;
+    numText.innerHTML = score;
+  });
+
+  down.addEventListener("click", function () {
+    score--;
+    numText.innerHTML = score;
+  });
+}
+
+// Call the function once to set up event listeners after DOM is loaded
+document.addEventListener("DOMContentLoaded", sum);
+
 function garlicHamster() {
   const hamster = document.getElementById("hamster");
   const responsetext = document.getElementById("responsetext");
